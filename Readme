@@ -1,1 +1,6 @@
 Takes 24 bit black and white bitmaps and converts it to a 2D Array of 1's and 0's in C syntax.
+
+requires Pillow pyper click to copy the array into your clipboard for easy pasting.
+
+pip install pyperclip
+pip install Pillow
