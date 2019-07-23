@@ -26,7 +26,7 @@ Execute the script by opening it in an IDE and running it or open a command line
 ```
 python3 mapGenerator.py
 ```
-You will be prompted to choose a file for conversion. This program will not change, delete or create files.
+You will be prompted to choose the bitmap file for conversion. This program will not change, delete or create files.
 After the program is run, the output to the console will be a C array that holds the image data as 1's and 0's.
 The array will also be copied into your clipboard so it can easily be pasted into your code.
 
