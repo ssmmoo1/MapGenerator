@@ -4,12 +4,12 @@
 
 ### Purpose:
 
-I wrote this program to easily create maps for a 3D game I made in C that used raycasting to turn a 2D map into a 3D projection.
-The 1's were my walls and the 0's were empty space in the map. This tool made it very convenient to copy and paste new maps into the code.
+I wrote this program to easily create maps for a 3D game I made in C that used raycasting to turn a 2D map into a 3D projection.The map is a 2D array with 1's and 0's which represent walls or empty space. I wanted to be able to draw the map in paint instead of manually placing 1's and 0's in the arrays. So this tool takes black and white drawings from paint and then converts the black and white data into the 2D array of 1's and 0's to represent the map in my game. This tool made it very convenient to copy and paste new maps into the code.
 
 ### Dependencies:
 
 This program was written in python 3 and requires Pillow and Pyperclip to be installed.
+Pillow is used to read the bitmap data and pyperclip is used to save the 2D array in C syntax to your clipboard for easy pasting.
 
 ```
 pip install Pillow
