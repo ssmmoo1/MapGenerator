@@ -6,21 +6,24 @@ import pyperclip
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
 
-Tk().withdraw() 
-filename = askopenfilename() 
+Tk().withdraw()
+filename = askopenfilename()
 
 
 map = Image.open(filename)
 table = np.array(map)
 
-
-cArr = "uint8_t grid[100][100] = {"
+rows = str(len(table))
+cols = str(len(table[0]))
+cArr = "uint8_t grid["+rows+"]["+cols+"] = {"
 
 
 for r in table:
     cArr = cArr + "{"
     for c in r:
-        if(c == 0):
+
+        if c[0] == 0 and c[1] == 0 and c[2] == 0:
+
             a = 1
         else:
             a = 0
